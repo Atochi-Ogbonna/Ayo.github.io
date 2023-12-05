@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link href="Asset/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/19125933cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<body>
+
+    <!-- ==Top Navigation== -->
+    
+    <div class="navbar">
+      <div class="nav">
+        <div class="navbar-logo"><img src="./Asset/logo.png"></div>
+      <div class="navbar-toggle"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      
+      <ul>
+        <!-- <li class="navbar-links"><a href="#">Home</a></li> -->
+        <li class="navbar-links"><a href="index.html">About</a></li>
+        <li class="navbar-links"><a href="#">Search Confidant</a></li>
+        <li class="navbar-links"><a href="#">Medicare</a></li>
+        <li class="navbar-links"><a href="#">FAQ</a></li>
+        <li id="login" class="navbar-links"><a href="login/index.html">Login<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+      </ul>
+
+      
+    </div>
+
+    
+
+     <!-- ==End Top Navigation== -->
+
+    <div class="container">
+        <header>
+            <div class="child">
+                <h1>A stable Mental health is like music to our ears</h1>
+                <p>It’s quite easy to bottle up and die on the Inside not having anyone to speak to. Ayo helps you connect with professional Doctors, Laywers and Therapist
+                </p>
+                <button class="button"><i class="fa-solid fa-magnifying-glass"></i>Search now</button>
+            </div>
+            <img class="filter" src="Asset/hero.png" alt="Download Mobile App" >
+        </header>
+    </div> 
+
+    <div class="container">
+      <header class="section2">
+          <div class="child">
+              <h1>Now you can Connect with licensed <span style="color: #00853C;">Doctors, Therapist and Lawyers</span></h1>
+          </div>
+          <img class="filter" src="Asset/chat.png" alt="Download Mobile App" >
+      </header>
+  </div> 
+
+
+ <div class="txt">
+    <h3 style="color: #1caa5c;">Send Private Messages</h3>
+    <p style="color: #fff;">Simple, secure and private messaging and calling</p>
+    <button class="button">Download<i class="fa-brands fa-google-play"></i></button>
+  </div>
+<div class="container-2">
+ 
+  <div class="child-1"><img src="Asset/image-4.png"></div>
+  <div class="child-1"><img src="Asset/image-5.png"></div>
+  <div class="child-1"><img src="Asset/image-6.png"></div>
+</div>
+
+
+<script>
+const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links');
+toggleButton.addEventListener('click', function(){
+  for(var i=0; i<navbarLinks.length; i++)
+  navbarLinks[i].classList.toggle('active')
+});
+
+</script>
+  
+</body>
+</html>
+ 
