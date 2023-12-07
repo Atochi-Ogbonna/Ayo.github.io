@@ -212,6 +212,9 @@ header{
 
         /* ====END HERO SECTION==== */
 
+
+        /* ====SECTION ONE==== */
+
         .section2{
             padding: 8.5rem 1rem;
             display: flex;
@@ -248,6 +251,45 @@ header{
     
         }
 
+        /* =====END SECTION ONE====  */
+
+
+        @media only screen and (max-width: 768px){
+            .txt{
+                margin-left: 3rem;
+                width: 70%;
+            }
+    
+            .child-1{
+                display: block;
+                max-width: 100%;
+                padding: 1rem 3rem;
+            }
+        }
+
+        
+
+        @media only screen and (min-width: 900px){
+            .container-2{
+                height: fit-content;
+                max-width: 100%;
+                padding: 2rem 8rem;
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+            }
+
+            .txt{
+                margin-left: 8rem;
+                width: 70%;
+            }
+        }
+        
+
+        
+
+      
        
         
 
